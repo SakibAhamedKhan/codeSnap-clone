@@ -1,0 +1,220 @@
+body{
+	background-color: #1D1B27;
+	/* overflow: hidden; */
+}
+
+.welcome-section{
+	background-image: linear-gradient(270deg, rgb(229, 93, 135) -0.52%, rgb(95, 195, 228) 100%);
+	transition: all 0.5s ease-in-out;
+}
+
+.welcome-section:hover{
+	transform:scale(1.01);
+  	/* box-shadow:
+	-1px 0 18px 0 rgb(240, 240, 245),
+	5px 5px 18px -10px rgb(255, 255, 255); */
+	
+	box-shadow: 0 0 5px rgb(255, 255, 255); 
+}
+
+/* course section style */
+.course-img{
+	overflow: hidden;
+	box-shadow: rgb(0 0 0 / 80%) 0px 0px 30px;
+	border-radius: 10px;
+	position: relative;
+	transition: transform .3s, visibility .3s ease-in;
+}
+.course-img img{
+	width:100%;
+	transition: transform .3s, visibility .3s ease-in;
+}
+.course-img:hover img{
+	transform: scale(1.2) !important;
+	
+}
+.course-img-title{
+	position: absolute;
+	color: white;
+  	left: 0;
+  	right: 0;
+ 	height: 100%;
+  	width: 100%;
+	top: 40%;
+  	left: 8%;
+	transition: all .3s ease-in;
+}
+.course-img-title-inside{
+	font-size: 40px;
+}
+.course-img:hover .course-img-title{
+	transform: scale(0.95);
+}
+#title-course1{
+	font-size: 40px;
+	font-weight: bold;
+	color: rgb(255, 95, 95);
+	border-bottom: 5px solid rgba(255, 255, 255, 0.055);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.course-details{
+	color: white;
+	font-size: 18px;
+}
+#title-course2{
+	font-size: 40px;
+	font-weight: bold;
+	color: #B12DF5;
+	border-bottom: 5px solid rgba(255, 255, 255, 0.055);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+#title-course3{
+	font-size: 40px;
+	font-weight: bold;
+	color: #E8EB92;
+	border-bottom: 5px solid rgba(255, 255, 255, 0.055);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+/* article section style */
+.article-card{
+	cursor: pointer;
+	border-bottom: 5px solid rgba(255, 255, 255, 0.055);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.article-img{
+	width: 100%;
+	box-shadow: rgb(0 0 0 / 80%) 0px 0px 30px;
+    border-radius: 8px;
+}
+.article-title{
+	margin-top: 10px;
+	color: white;
+	font-size: 16px;
+}
+
+
+/* subscribe section style */
+#subscribe-section{
+	width: 600px !important;
+	background-color: #212430;
+	padding: 50px !important;
+	box-shadow: rgb(0 0 0 / 80%) 0px 0px 30px;
+	margin-bottom: 40px;	
+}
+.subscribe{
+	border-bottom: 5px solid rgba(255, 255, 255, 0.055);
+}
+
+/* footer style  */
+.text-justify, .subscribe-text-1, .subscribe-text-2, .subscribe-text-3, .subscribe-text-4 {
+	text-align: justify !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media (max-width:1200px) {
+	.course-img-title-inside{
+		font-size: 30px !important;
+	}
+}
+@media (max-width:992px) {
+	.course-img-title-inside{
+		font-size: 25px !important;
+	}
+	#title-course1, #title-course2 , #title-course3{
+		font-size: 30px;
+	}
+	.course-card2{
+		margin-top: 20px;
+	}
+	#subscribe-section{
+		width: 500px !important;
+	}
+	.subscribe-input{
+		width: 100% !important;
+		margin: 0 !important;
+		margin-bottom: 10px !important;
+	}
+	.subscribe-button{
+		width: 100% !important;
+	}
+	.footer-details {
+		width: 100% !important;
+	}
+}
+@media (max-width:600px) {
+	.course-img-title-inside{
+		font-size: 20px !important;
+	}
+	.course-details{
+		font-size: 14px !important;
+	}
+	#subscribe-section{
+		width: 400px !important;
+		padding: 30px !important;
+	}
+	.subscribe-text-1{
+		font-size: 28px !important;
+	}
+	.subscribe-text-2{
+		font-size: 18px !important;
+	}
+	.subscribe-text-3, .subscribe-text-4{
+		font-size: 13px !important;
+	}
+	
+	
+}
+@media (max-width:500px) {
+	#subscribe-section{
+		width: 370px !important;
+	}
+}
+@media (max-width:450px) {
+	#subscribe-section{
+		width: 280px !important;
+	}
+}
+
+@media (max-width:350px) {
+	#logo{
+		margin: auto !important;
+	}
+	#manue{
+		margin: auto !important;
+	}
+	.course-img-title-inside{
+		font-size: 15px !important;
+	}
+	#title-course1, #title-course2 , #title-course3{
+		font-size: 20px;
+	}
+	.course-details{
+		font-size: 12px !important;
+	}
+	#subscribe-section{
+		width: 240px !important;
+	}
+}
+@media (max-width:310px) {
+	#subscribe-section{
+		width: 210px !important;
+	}
+}
